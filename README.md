@@ -9,3 +9,6 @@ This is a script that votes for specified bot(s) automatically per 12 hours on t
 - After finishing the installation go and set ur info on `config.json`
 - Then save it and run `start.bat`
 
+# Video Tutorial 
+
+- https://youtu.be/eyi_ghcm3DA 
