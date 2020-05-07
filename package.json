@@ -1,0 +1,19 @@
+{
+  "name": "top.gg-automatic-voter",
+  "version": "1.0.0",
+  "description": "Script that makes DBL (top.gg) voting easier",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Baron010/top.gg-automatic-voter/"
+  },
+  "author": "Baron",
+  "homepage": "https://github.com/Baron010/top.gg-automatic-voter#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "puppeteer": "^3.0.3"
+  }
+}
