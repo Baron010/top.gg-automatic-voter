@@ -14,17 +14,21 @@ function vote() {
 
 	await page.setCookie({ name: 'connect.sid', value: COOKIE, domain: 'top.gg', path: '/' });
 	await page.goto(`https://top.gg/bot/${b.id}/vote`);
-	await page.click('#votingvoted');
+	
+	setTimeout(() => {
+			 page.click('#votingvoted');
+		},10000);
+			setTimeout(() => {
+				logger.succ(`Successfully voted for ${b.name}!`);
+				browser.close()
+			},15000);
 
-	logger.succ(`Successfully voted for ${b.name}!`);
-
-	setTimeout(() => browser.close(), 1000);
-	if(b.id == BOTS[BOTS.length-1].id) {
-	setTimeout(() => { //to make sure every vote finished
-	setTimeout(vote, 1000 * 60 * 60 * 12);
-	logger.info('Waiting 12 hours');
-	}, 5000);
-	}
-});
+			if (b.id == BOTS[BOTS.length - 1].id) {
+				setTimeout(() => {
+					setTimeout(vote, 1000 * 60 * 60 * 12);
+					logger.info('Waiting 12 hours');
+				}, 5000);
+			}
+		});
 }
 vote();
