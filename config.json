@@ -1,6 +1,5 @@
 {
-  "BOTS": [
-    { "name": "Bot-Name", "id": "Bot-ID" }
-  ],
+  "BOT_ID": "",
+  "BOT_NAME": "",
   "COOKIE": ""
 }
