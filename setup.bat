@@ -1,2 +1,2 @@
 npm i
-pasue
+pause
