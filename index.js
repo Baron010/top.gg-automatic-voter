@@ -1,5 +1,6 @@
+require('dotenv').config();
 const puppeteer = require('puppeteer');
-const { BOT_ID, BOT_NAME, COOKIE } = require('./config.json');
+const { BOT_ID, BOT_NAME, COOKIE } = process.env;
 const logger = require('./logger.js');
 
 if (!BOT_ID) return logger.err('Config BOT_ID is missing');
