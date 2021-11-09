@@ -16,9 +16,9 @@ async function vote() {
 	await page.goto(`https://top.gg/bot/${BOT_ID}/vote`);
 
 	await new Promise((resolve)=>setTimeout(() => {
-		page.click('#votingvoted');
+		page.click('.css-ngdg5r');
         resolve();
-	}, 10000));
+	}, 15000));
 
 	await new Promise((resolve)=>setTimeout(() => {
 		logger.succ(`Successfully voted for ${BOT_NAME}!`);
