@@ -1,0 +1,31 @@
+{
+  "name": "top.gg-automatic-voter",
+  "version": "1.0.0",
+  "description": "Script to vote a bot on top.gg automatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baron010/top.gg-automatic-voter.git"
+  },
+  "keywords": [
+    "top.gg",
+    "discord",
+    "bots",
+    "javascript",
+    "puppeteer"
+  ],
+  "author": "baron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baron010/top.gg-automatic-voter/issues"
+  },
+  "homepage": "https://github.com/Baron010/top.gg-automatic-voter#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs": "0.0.1-security",
+    "puppeteer": "^13.1.2"
+  }
+}
