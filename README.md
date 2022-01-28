@@ -1,6 +1,11 @@
+# Features
+- 50 Star = Adding token checker,
+- 80 star = Adding every 12h Auto vote,
+- 150 star = Adding Vpn and Proxy system to bypass the ip ban
+
 # top.gg-automatic-voter
 This is a script that votes for specified bot automatically
-Just change the url at line: `116` with ur bot vote url
+Just change the url at line: `116` in `index.js` file with ur bot vote url
 
 # Usage:
 - Install Node.js
