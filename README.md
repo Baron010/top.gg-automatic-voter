@@ -1,7 +1,7 @@
 # Features
 - 50 Star = Adding token checker,
-- 80 star = Adding every 12h Auto vote,
-- 150 star = Adding Vpn and Proxy system to bypass the ip ban
+- 80 Star = Adding every 12h Auto vote,
+- 150 Star = Adding Vpn and Proxy system to bypass the ip ban
 
 # top.gg-automatic-voter
 This is a script that votes for specified bot automatically
