@@ -24,13 +24,13 @@ const fs = require('fs');
 
             async function main() {
                 const tokens = fs.readFileSync('output/verified.txt', 'utf-8').toString().replace(/\r\n/g,'\n').split('\n');
-                const pathToExtension = require('path').join(__dirname, 'free-proxy-extension-master');
+                //const pathToExtension = require('path').join(__dirname, 'proxy-extension');
                 const browser = await puppeteer.launch({
                 headless: false,
-                args: [
+                /*args: [
                 `--disable-extensions-except=${pathToExtension}`,
                 `--load-extension=${pathToExtension}`,
-                ],
+                ],*/
                 });
                 
                 const targets = await browser.targets();
