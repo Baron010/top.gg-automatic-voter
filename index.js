@@ -184,10 +184,10 @@ const fs = require('fs');
                                     try {
          
 
-                                        console.log(i + " - " + tokens[i])
+                                    console.log(i + " - " + tokens[i])
     
 
-                                    await page.waitForSelector(".marginBottom20-32qID7", {timeout: 70000})
+                                    //await page.waitForSelector(".marginBottom20-32qID7", {timeout: 70000})
                                     await page.setBypassCSP(true);
                                     await console.log(logger.try(`Trying Logging into the account.`, false))
                                     let tokenTarget = tokens[i]
@@ -208,13 +208,13 @@ const fs = require('fs');
                                     
                                     },{tokenTarget});
             
-                                        await page.waitForSelector(".colorHeaderPrimary-26Jzh-.size20-17Iy80.applicationName-212NZT", {timeout: 70000})
-                                        await page.waitForSelector(".button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMedium-1AC_Sl.grow-q77ONN", {timeout: 15000})
-                                        await page.click('.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMedium-1AC_Sl.grow-q77ONN', {timeout: 15000})
+                                        await page.waitForSelector(".button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeMedium-2bFIHr.grow-2sR_-F", {timeout: 70000})
+                                        //await page.waitForSelector(".button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeMedium-1AC_Sl.grow-q77ONN", {timeout: 15000})
+                                        await page.click('.button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ.sizeMedium-2bFIHr.grow-2sR_-F', {timeout: 15000})
 
 
                                         console.log('go to probot page')
-                                        await page.waitForXPath(`/html/body/div[1]/div/div/div[1]/div[1]/div/div/div[2]/div[1]/div/a[2]/p`);
+                                        await page.waitForSelector(`.chakra-avatar__initials.css-vn2b1z`);
                                         await page.goto("https://top.gg/bot/probot/vote", {
                                             timeout: 0
                                         });
